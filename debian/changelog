@@ -1,0 +1,40 @@
+trac-accountldap (0.32+r15265-1) experimental; urgency=low
+
+  * Translate one more Spanish message into English.
+  * 
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Tue, 23 May 2017 10:45:43 +0200
+
+trac-accountldap (0.32+r11800-5) experimental; urgency=low
+
+  * Find LDAP DN using search instead of trying to construct it. Patch by
+    Miklós Molnár.
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Tue, 11 Apr 2017 18:04:37 +0200
+
+trac-accountldap (0.32+r11800-4) experimental; urgency=low
+
+  * Fix 'list index out of range' error when req.authname == 'anonymous'.
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Thu, 05 Sep 2013 19:42:06 +0200
+
+trac-accountldap (0.32+r11800-3) experimental; urgency=low
+
+  * Also translate HTML page into English.
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Thu, 05 Sep 2013 10:07:27 +0200
+
+trac-accountldap (0.32+r11800-2) experimental; urgency=low
+
+  * Translate messages into English.
+  * Use req.authname instead of req.remote_user which apparently isn't
+    always present.
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Thu, 05 Sep 2013 09:56:08 +0200
+
+trac-accountldap (0.32+r11800-1) experimental; urgency=low
+
+  * Initial package.
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Tue, 03 Sep 2013 09:54:48 +0200
+

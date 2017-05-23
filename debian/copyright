@@ -1,0 +1,25 @@
+This package was debianized by:
+
+    András Korn <korn-deb@elan.rulez.org>  Tue, 03 Sep 2013 09:54:48 +0200
+
+It was originally downloaded from:
+
+    http://trac-hacks.org/wiki/AccountLdapPlugin
+
+New versions are available at:
+
+    https://github.com/akorn/accountldapplugin
+
+Upstream Author:
+
+    Carlos López Pérez
+
+Copyright:
+
+    © 2009 Carlos López Pérez
+    © 2011-2016 Ryan J. Ollos
+    © 2013-2017 András Korn
+    © 2017 Miklós Molnár
+    © 2017 Lőrinc Száray
+
+License: LGPL
