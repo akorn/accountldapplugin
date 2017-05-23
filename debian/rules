@@ -1,0 +1,4 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --sourcedir=trunk --with python2 --buildsystem=python_distutils

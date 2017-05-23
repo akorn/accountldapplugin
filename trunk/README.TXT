@@ -10,9 +10,13 @@ basedn =
 user_rdn =         [1]
 attempts = 1       [2]
 user_filter = uid  [2] [3] 
+ldap_prefix =
 
-Attempts it's a number that indicates retry connecting to the LDAP server. 
+Attempts is a number that indicates retry connecting to the LDAP server. 
 It's optional.
+
+ldap_prefix should be ldap:// or ldaps:// (or perhaps ldapi:/// --
+untested).
 
 [1] It is just necessary to change the password
 [2] Optional fields
