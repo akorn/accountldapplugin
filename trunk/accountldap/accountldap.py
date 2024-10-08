@@ -48,7 +48,7 @@ class AccountLDAP(Component):
                                      trace_level=2)
                 self.ldap.protocol_version = ldap.VERSION3
                 break
-            except (ldap.LDAPError, e):
+            except ldap.LDAPError as e:
                 self.log.error('LDAP connection problems. Check trac.ini'
                                ' ldap options. Attempt %i', (i + 1))
                 self.enabled = False
@@ -111,7 +111,7 @@ class AccountLDAP(Component):
         return self.MODULE_NAME
                 
     def get_navigation_items(self, req):
-        if not req.authname or not req.session.has_key('email'):
+        if not req.authname or not 'email' in req.session:
             return
         yield ('metanav', self.MODULE_NAME,
                tag.a(u'LDAP Password', href=req.href.accountldap()))
@@ -143,7 +143,7 @@ class AccountLDAP(Component):
             self.log.warn('Ldap change password dn. %s' % dn)
             # Update password
             self.ldap.passwd_s(dn, old, p1)
-        except (ldap.LDAPError, e):
+        except ldap.LDAPError as e:
             data['accountldap_message'] = \
                 tag.center(u'There was an error changing your password.',
                            tag.b(u' Please make sure the old password you'
@@ -183,7 +183,7 @@ class AccountLDAP(Component):
             type, data = self.ldap.result(id, 0)
             dn = data[0][0]
             dict = data[0][1]
-        except (ldap.LDAPError, e):
+        except ldap.LDAPError as e:
             self.log.error(str(e))
             self.log.error('Search LDAP problems. Check trac.ini ldap options')
             return ('', '', '')

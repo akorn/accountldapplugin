@@ -1,3 +1,9 @@
+trac-accountldap (0.32+r15265-3) experimental; urgency=low
+
+  * Get rid of has_key (replace with idiomatic Python 3 solution)
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Tue, 08 Oct 2024 20:46:40 +0200
+
 trac-accountldap (0.32+r15265-2) experimental; urgency=low
 
   * Build with Python 3.
