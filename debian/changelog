@@ -1,7 +1,12 @@
+trac-accountldap (0.32+r15265-2) experimental; urgency=low
+
+  * Build with Python 3.
+
+ -- Andras Korn <korn-deb@elan.rulez.org>  Tue, 08 Oct 2024 09:40:58 +0200
+
 trac-accountldap (0.32+r15265-1) experimental; urgency=low
 
   * Translate one more Spanish message into English.
-  * 
 
  -- Andras Korn <korn-deb@elan.rulez.org>  Tue, 23 May 2017 10:45:43 +0200
 
